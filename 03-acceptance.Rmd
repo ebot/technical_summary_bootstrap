@@ -1,0 +1,17 @@
+# Project Acceptance Form
+
+This project (Project# XXXX) was completed on November 30, 2022.
+
+Signature on this form validates that the services provided have fulfilled
+[Company]’s contractual obligations. You acknowledge that the components and
+content related to this service have been fully tested and validated in your
+environment to be consistent with your policies and procedures prior to use in
+production.
+
+If you agree, please respond to me no later than January 15, 2023. If [Company]
+has not heard from you regarding your agreement and acceptance of the
+completed project within this time frame, your concurrence is implied.
+
+<hr style="border: 1px solid rgb(138, 130, 130); height: 0px; margin-bottom: -10px; margin-top: 40px;" />
+<br />
+Hospital Representative and Title - Date

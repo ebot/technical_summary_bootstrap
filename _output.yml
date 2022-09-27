@@ -1,0 +1,37 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: none # chapter # none
+  self_contained: true
+  highlight: haddock
+  toc_depth: 3
+  config:
+    download: [] # [["sdm_lockbox_summary.pdf", "pdf"], ["sdm_lockbox_summary.html", "html"]] # []
+    toc:
+      # collapse: section
+      scroll_highlight: yes
+      before: null
+      after: null
+    toolbar:
+      position: fixed
+    edit : null
+    search: yes
+    sharing: null
+    info: no
+# bookdown::pdf_book:
+#   latex_engine: pdflatex # xelatex
+#   keep_tex: yes
+#   fig_caption: yes
+#   extra_dependencies: ["float", "xcolor"]
+html_document:
+  theme: flatly
+  highlight: tango
+  split_by: none
+  self_contained: true
+  number_sections: true
+  toc: false
+  toc_depth: 3
+  toc_float:
+    collapsed: false
+# tufte::tufte_html:
+#   tufte_variant: "envisioned"
+# slidy_presentation: default

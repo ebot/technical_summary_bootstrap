@@ -1,0 +1,8 @@
+book_filename: "process_name"
+delete_merged_file: true
+output_dir: technical_summary
+rmd_files:
+  - "index.Rmd"
+  - "01-program_description.Rmd"
+  - "02-support.Rmd"
+  - "03-acceptance.Rmd"

@@ -1,0 +1,67 @@
+--- 
+title: "Client_Name Product_Name Customization"
+subtitle: 'Technical Summary for the Custom Whatever'
+author: "Ed Botzum"
+date: "Created YYYY-MM-DD, Last Updated `r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+link-citations: no
+description: "This is an overview of the custom process betweeen X and Y."
+---
+
+<style>
+ div.mermaid svg {border:solid 2px #ededed;}
+</style>
+
+```{r setup, include=FALSE, warning=FALSE}
+if (!require("plantuml")) devtools::install_github("rkrug/plantuml")
+
+library("plantuml")
+if (!require(DiagrammeR)) install.packages('DiagrammeR')
+library(DiagrammeR)
+
+# # Ensure latest Mermaid:
+# dist_loc <- list.files(
+#   find.package("DiagrammeR"),
+#   recursive = TRUE,
+#   pattern = "mermaid.*js",
+#   full.names = TRUE
+# )
+# js_cdn_url <- "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+# download.file(js_cdn_url, dist_loc)
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, error = FALSE,
+                      message = FALSE, results = 'asis')
+
+## Manage Themes
+# https://bookdown.org/yihui/rmarkdown/appearance-and-style-1.html
+# install.packages("knitr", repo="http://cran.r-project.org", dep=T)
+# library(knitr)     # Load Library
+# knit_theme$get()   # List Themes
+# knit_theme$get("denim") # Download Theme
+
+# automatically create a bib database for R packages
+# knitr::write_bib(c(
+#   .packages(), 'bookdown', 'knitr', 'rmarkdown'
+# ), 'packages.bib')
+```
+
+<div style="page-break-before:always;"></div>
+\pagebreak
+
+# Overview {-}
+
+What's the problem?
+
+Why is it important?
+
+How are we going to fix it?
+
+## Contacts {.unlisted .unnumbered}
+
+Name            | Phone Number | Email Address               | Role
+--------------- | ------------ | --------------------------- | -----------------
+Ed Botzum       | 555.555.1212 | contact@somewebsite.com     | Custom Programmer
+
+<div style="page-break-before:always;"></div>
+\pagebreak

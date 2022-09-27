@@ -1,0 +1,23 @@
+# Support and Maintenance
+
+## Support Procedures
+
+If there is a problem with the upload process, the client should open a ticket
+and assign it to the [Ticket Queue] group. The ticket should contain the
+keywords, "Client Name + Customization" in the description.
+
+Support will be provided only between the hours of 8:00 AM to 4:30 PM Eastern
+Time on business days, referred to here as the "Interface Support Hours."
+Where the support program normally calls for [Company] support to take
+certain steps within a specified time, only those hours within the Interface
+Support Hours will be applicable.  For example if a request is received at 4:00
+PM Eastern time on a Friday, or the evening before an [Company] Holiday,
+the initiation will not occur until the morning of the next business day.
+
+## Maintenance Procedures
+
+In the event that a programming change is needed, the client will need to open a
+new request.
+
+<div style="page-break-before:always;"></div>
+\pagebreak
