@@ -119,6 +119,7 @@ plot(x = x, file = file_name)
 
 ```{r echo=FALSE}
 DiagrammeR::mermaid("
+%%{init: {'themeVariables': { 'edgeLabelBackground': 'white'}}}%%
 flowchart TD
   classDef default fill:#f1f1f1,stroke:#333;
   classDef hide fill:#0000,stroke:#0000,stroke-width:0px,color:#0000;
@@ -136,7 +137,7 @@ flowchart TD
   check -->|No| err[Record Error & Reason to Log]:::Error
   cust3 --> loop_stop(( ))
   err --> loop_stop
-  loop_stop -->|Next Item| loop
+  loop_stop --> |Next Item| loop
   loop_stop --> put[FTP Put a file somewhere fa:fa-cloud-upload]:::FtpCommand
   put --> e[Send email of extraction results]:::CustomCommand
 

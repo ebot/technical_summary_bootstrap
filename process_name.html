@@ -2881,7 +2881,7 @@ display: none;
 <h1 class="title toc-ignore">Client_Name Product_Name Customization</h1>
 <h3 class="subtitle">Technical Summary for the Custom Whatever</h3>
 <h4 class="author">Ed Botzum</h4>
-<h4 class="date">Created YYYY-MM-DD, Last Updated 2022-09-26</h4>
+<h4 class="date">Created YYYY-MM-DD, Last Updated 2022-10-17</h4>
 
 </div>
 
@@ -2924,6 +2924,40 @@ div.mermaid svg {border:solid 2px #ededed;}
 </tr>
 </tbody>
 </table>
+</div>
+<div id="prerequisites" class="section level2 unlisted unnumbered">
+<h2 class="unlisted unnumbered">Prerequisites</h2>
+<p>The following questions/issues are blocking development:</p>
+<ol style="list-style-type: decimal">
+<li>TBD</li>
+</ol>
+</div>
+<div id="document-revision-history" class="section level2 unlisted unnumbered">
+<h2 class="unlisted unnumbered">Document Revision History</h2>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="14%" />
+<col width="14%" />
+<col width="61%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2022-09-28</td>
+<td>Ed Botzum</td>
+<td>Original Draft Release</td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-before:always;">
 
 </div>
@@ -2945,8 +2979,8 @@ Description</h1>
 </div>
 <div id="mermaid-style" class="section level3" number="1.1.2">
 <h3><span class="header-section-number">1.1.2</span> Mermaid Style</h3>
-<div id="htmlwidget-fc1bc3bb0d022ca3ed54" style="width:auto;height:900px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fc1bc3bb0d022ca3ed54">{"x":{"diagram":"\nflowchart TD\n  classDef default fill:#f1f1f1,stroke:#333;\n  classDef hide fill:#0000,stroke:#0000,stroke-width:0px,color:#0000;\n  classDef FtpCommand fill:#ffffcc,stroke:#333;\n  classDef DmCommand fill:#c9ffc9,stroke:#333;\n  classDef CustomCommand fill:#c2f0ff,stroke:#333;\n  classDef Error fill:#ffe0e0,stroke:#333;\n  \n  ftp[FTP Get a file from somewhere fa:fa-cloud-download]:::FtpCommand --> dm[API Interface fa:fa-share-alt]:::DmCommand\n  dm --> loop(Loop through something)\n  loop -->|First Item| cust[<center>Custom <br> Command fa:fa-wrench<\/center>]\n  cust --> check{<center>Successful <br> Command?<\/center>}\n  check -->|Yes| cust2[Do another custom thing]\n  cust2 --> cust3[Final Custom Thing]\n  check -->|No| err[Record Error & Reason to Log]:::Error\n  cust3 --> loop_stop(( ))\n  err --> loop_stop\n  loop_stop -->|Next Item| loop\n  loop_stop --> put[FTP Put a file somewhere fa:fa-cloud-upload]:::FtpCommand\n  put --> e[Send email of extraction results]:::CustomCommand\n\n  e --- Legend\n  subgraph Legend\n    direction LR\n    desc_ftp[FTP Action fa:fa-cloud]:::FtpCommand --- desc_dm[API Interface fa:fa-share-alt]:::DmCommand\n    desc_dm --- desc_cst[<center>Custom Apps <br> Action fa:fa-wrench<\/center>]:::CustomCommand\n  end\n  classDef hideline fill:#ffe0e0,stroke:#333\n  linkStyle 12,13,14 stroke:#0000,stroke-width:0px;\n \n  class cust,cust2,cust3 CustomCommand\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1c11aa43b389cf49430d" style="width:auto;height:900px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1c11aa43b389cf49430d">{"x":{"diagram":"\n%%{init: {'themeVariables': { 'edgeLabelBackground': 'white'}}}%%\nflowchart TD\n  classDef default fill:#f1f1f1,stroke:#333;\n  classDef hide fill:#0000,stroke:#0000,stroke-width:0px,color:#0000;\n  classDef FtpCommand fill:#ffffcc,stroke:#333;\n  classDef DmCommand fill:#c9ffc9,stroke:#333;\n  classDef CustomCommand fill:#c2f0ff,stroke:#333;\n  classDef Error fill:#ffe0e0,stroke:#333;\n  \n  ftp[FTP Get a file from somewhere fa:fa-cloud-download]:::FtpCommand --> dm[API Interface fa:fa-share-alt]:::DmCommand\n  dm --> loop(Loop through something)\n  loop -->|First Item| cust[<center>Custom <br> Command fa:fa-wrench<\/center>]\n  cust --> check{<center>Successful <br> Command?<\/center>}\n  check -->|Yes| cust2[Do another custom thing]\n  cust2 --> cust3[Final Custom Thing]\n  check -->|No| err[Record Error & Reason to Log]:::Error\n  cust3 --> loop_stop(( ))\n  err --> loop_stop\n  loop_stop --> |Next Item| loop\n  loop_stop --> put[FTP Put a file somewhere fa:fa-cloud-upload]:::FtpCommand\n  put --> e[Send email of extraction results]:::CustomCommand\n\n  e --- Legend\n  subgraph Legend\n    direction LR\n    desc_ftp[FTP Action fa:fa-cloud]:::FtpCommand --- desc_dm[API Interface fa:fa-share-alt]:::DmCommand\n    desc_dm --- desc_cst[<center>Custom Apps <br> Action fa:fa-wrench<\/center>]:::CustomCommand\n  end\n  classDef hideline fill:#ffe0e0,stroke:#333\n  linkStyle 12,13,14 stroke:#0000,stroke-width:0px;\n \n  class cust,cust2,cust3 CustomCommand\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="database-schema" class="section level2" number="1.2">
