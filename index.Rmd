@@ -63,5 +63,17 @@ Name            | Phone Number | Email Address               | Role
 --------------- | ------------ | --------------------------- | -----------------
 Ed Botzum       | 555.555.1212 | contact@somewebsite.com     | Custom Programmer
 
+## Prerequisites {.unlisted .unnumbered}
+
+The following questions/issues are blocking development:
+
+1. TBD
+
+## Document Revision History {.unlisted .unnumbered}
+
+Version | Date | Author | Description
+------- | ---------- | ---------- | --------------------------------------------
+1       | 2022-09-28 | Ed Botzum | Original Draft Release
+
 <div style="page-break-before:always;"></div>
 \pagebreak
