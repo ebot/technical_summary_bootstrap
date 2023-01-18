@@ -33,6 +33,7 @@ package "Other Component Samples" {
 }
 
 skinparam defaultTextAlignment center
+skinparam noteTextAlignment left
 skinparam BackgroundColor #ffffff
 skinparam legendBackgroundColor 00FF0067
 skinparam linetype polyline
@@ -100,6 +101,7 @@ legend
 endlegend
 
 skinparam defaultTextAlignment center
+skinparam noteTextAlignment left
 skinparam BackgroundColor #ffffff
 skinparam legendBackgroundColor #f1f1f1
 skinparam linetype polyline
