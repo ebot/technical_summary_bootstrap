@@ -3,6 +3,8 @@ title: "Client_Name Product_Name Customization"
 subtitle: 'Technical Summary for the Custom Whatever'
 author: "Ed Botzum"
 date: "Created YYYY-MM-DD, Last Updated `r Sys.Date()`"
+geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
+mainfont: "Helvetica"
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: no
@@ -15,10 +17,13 @@ description: "This is an overview of the custom process betweeen X and Y."
 
 ```{r setup, include=FALSE, warning=FALSE}
 if (!require("plantuml")) devtools::install_github("rkrug/plantuml")
-
 library("plantuml")
+
 if (!require(DiagrammeR)) install.packages('DiagrammeR')
 library(DiagrammeR)
+
+server_set(location = "local")
+server_start()
 
 # # Ensure latest Mermaid:
 # dist_loc <- list.files(
